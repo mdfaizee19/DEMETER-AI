@@ -86,9 +86,6 @@ The farmer initiates the workflow by submitting core provenance metadata:
 
 This establishes trust at origin and prevents fraud early.
 
-**Why forward-only?**  
-Agricultural flows are inherently linear (field → ship → shelf). Corrections happen via audits, not real-time backtracking.
-
 ---
 
 ### 2. QA Request & Sample Exchange (Q ↔ F, Q → Q)
@@ -102,10 +99,6 @@ Agricultural flows are inherently linear (field → ship → shelf). Corrections
 AI assists by:
 - Extracting data from fuzzy scans/PDFs
 - Flagging anomalies (e.g., mismatched weights or dates)
-
-Human oversight ensures regulatory compliance (e.g., EU residue limits).
-
-Minimal bidirectional exchange ensures speed and efficiency.
 
 ---
 
@@ -142,10 +135,6 @@ At border or port:
   - Compliance thresholds (e.g., pesticide limits)
 
 Blockchain anchoring ensures tamper detection.
-
-**This is the trust pivot.**  
-Failure immediately halts import.  
-Latency is <2 seconds via edge caching.
 
 ---
 
