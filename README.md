@@ -287,28 +287,28 @@ Please open an issue, submit a pull request, or request a walkthrough.
 
 
 sequenceDiagram
+    participant F as Farmer
+    participant Q as QA Certifier
+    participant D as DPP Issuer
     participant E as Exporter
-    participant P as AgriQCert Platform
-    participant AI as AI Engine
-    participant QA as QA Agency
-    participant C as Inji Certify
-    participant W as Inji Wallet
+    participant I as Importer
+    participant C as Consumer
     participant V as Inji Verify
-    participant B as Blockchain
 
-    E->>P: Submit batch data + documents
-    P->>AI: Extract structured data
-    AI-->>P: Parsed fields & flags
-
-    P->>QA: Inspection request
-    QA-->>P: Inspection results
-
-    P->>C: Issue Digital Product Passport (VC)
-    C-->>W: Signed VC delivered (QR)
-
-    E->>V: QR scanned
-    V->>B: Verify credential anchor
-    B-->>V: Valid & untampered
-    V-->>E: Trusted verification result
-
-
+    F->>Q: Submit crop data (type, location, harvest date)
+    Q->>F: Request sample & details
+    F->>Q: Provide crop sample
+    Q->>Q: Conduct quality check (moisture %, pesticides)
+    Q->>D: Upload QA results & request DPP
+    D->>D: Create & issue Verifiable Credential (DPP as W3C VC)
+    Note over D: Blockchain anchored for tamper-proofing
+    D->>E: Share DPP (QR code linked)
+    E->>I: Send goods with DPP QR
+    I->>V: Scan QR & verify authenticity/data
+    V->>I: Validate issuer, integrity, expiry
+    Note over I,V: Real-time trust confirmed!
+    I->>C: Deliver to consumer
+    opt Optional Consumer View
+        C->>V: Scan product QR
+        V->>C: Display DPP data
+    end
