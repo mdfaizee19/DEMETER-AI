@@ -1,4 +1,4 @@
-# 🌱 AgriQCert
+#  AgriQCert
 **Verifiable Quality Certification for Agricultural Trade**
 
 AgriQCert is a high-complexity, web-based platform that digitizes and secures agricultural export and import certification using **Verifiable Credentials (VCs)**. It replaces fragmented, paper-heavy compliance workflows with a **tamper-proof, AI-assisted, blockchain-backed system** aligned with **W3C Verifiable Credentials** and **OpenID4VP** standards.
@@ -7,7 +7,7 @@ The platform enables farmers, QA agencies, DPP issuers, exporters, importers, an
 
 ---
 
-## 🚀 Why AgriQCert Exists
+##  Why AgriQCert Exists
 Agricultural trade suffers from:
 - Manual document verification (slow, error-prone)
 - Fraud via forged lab reports and certificates
@@ -19,7 +19,7 @@ It ensures that **what is verified is exactly what was issued**, cryptographical
 
 ---
 
-## 🧠 Core Innovations
+##  Core Innovations
 - **Verifiable Credentials (VCs)** as Digital Product Passports (DPPs)
 - **DID-based trust model** for issuers and verifiers
 - **Blockchain anchoring** for tamper resistance
@@ -29,7 +29,7 @@ It ensures that **what is verified is exactly what was issued**, cryptographical
 
 ---
 
-## 🏗️ System Overview
+## System Overview
 | Actor       | Role |
 |-------------|------|
 | **Farmer**  | Harvests and records crop details, provides samples for QA |
@@ -73,7 +73,7 @@ sequenceDiagram
 ```
 ---
 
-## 🧠 In-Depth Architecture Explanation
+##  In-Depth Architecture Explanation
 
 This sequence architecture represents a **trust-minimized, forward-only pipeline** tailored for agricultural supply chains. It mirrors real-world logistics while enforcing cryptographic compliance at every stage.
 
@@ -146,7 +146,7 @@ Post-import:
 
 ---
 
-## 🧩 Design Principles
+##  Design Principles
 
 - **Linearity** – Mirrors physical logistics
 - **Minimal Connections** – Only essential interactions (12 total)
@@ -159,38 +159,38 @@ This architecture doubles as **executable pseudocode** for backend orchestration
 
 ---
 
-## ✅ Mandatory Features Implemented
+##  Mandatory Features Implemented
 
-### 🔐 Authentication & Roles
+### Authentication & Roles
 - Multi-role login (Farmer, QA, Exporter, Importer)
 - JWT + DID-based authentication
 - Role-based access control
 
-### 📦 Batch Submission
+###  Batch Submission
 - Structured metadata forms
 - Multi-file uploads (PDFs, images, reports)
 
-### 🤖 AI Extraction
+### AI Extraction
 - OCR + NLP for noisy scans
 - Field extraction (e.g., “Moisture: 12.5%”)
 - Anomaly detection
 
-### 📜 Verifiable Credential Issuance
+### Verifiable Credential Issuance
 - Custom **DigitalProductPassport VC schema**
 - Issued via **Inji Certify**
 - W3C compliant
 
-### 🔗 Blockchain Integration
+### Blockchain Integration
 - Hash anchoring (IPFS + Ethereum / Polygon)
 - Revocation registries
 
-### 📱 QR-Based Verification
+### QR-Based Verification
 - Dynamic QR per DPP
 - Verification via **Inji Verify**
 
 ---
 
-## 🧾 Digital Product Passport (VC Schema)
+## Digital Product Passport (VC Schema)
 
 Each VC encapsulates:
 
@@ -211,7 +211,7 @@ Designed for **machine-verifiable border checks**, not PDFs.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 | Layer | Technology | Description |
 |-----|-----------|-------------|
@@ -225,7 +225,7 @@ Designed for **machine-verifiable border checks**, not PDFs.
 
 ---
 
-## 📈 Impact
+##  Impact
 
 - ⏱️ **Speed**: Hours → Seconds  
 - 🛡️ **Fraud Reduction**: ~90%  
