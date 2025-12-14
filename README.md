@@ -45,6 +45,12 @@ It ensures that **what is verified is exactly what was issued**, cryptographical
 The workflow follows a secure, step-by-step process from harvest to consumption, ensuring traceability and trust at every stage. This linear design minimizes friction, reduces attack surfaces, and scales to high-volume trade.
 
 ```mermaid
+
+```
+
+## Architecture
+
+```mermaid
 sequenceDiagram
     participant F as Farmer
     participant Q as QA Certifier
@@ -70,6 +76,7 @@ sequenceDiagram
     C->>V: Scan product QR
     V->>C: Display DPP data
     end
+
 ```
 
 # 🌱 AgriQCert  
