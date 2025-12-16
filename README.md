@@ -1,4 +1,4 @@
-#  AgriQCert
+#  AgriQCert/DEMETER
 **Verifiable Quality Certification for Agricultural Trade**
 
 AgriQCert is a high-complexity, web-based platform that digitizes and secures agricultural export and import certification using **Verifiable Credentials (VCs)**. It replaces fragmented, paper-heavy compliance workflows with a **tamper-proof, AI-assisted, blockchain-backed system** aligned with **W3C Verifiable Credentials** and **OpenID4VP** standards.
